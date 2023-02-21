@@ -1,9 +1,11 @@
 const range = document.querySelector('#font-size-control')
 const text = document.querySelector('#text')
 
-range.addEventListener('input', () => {
-    const rangevalue = range.value;
-    text.style.fontSize = rangevalue + 'px';
+text.style.fontSize = range.value + 'px';
 
-// lub text.style.fontSize = range.value + 'px';
+range.addEventListener('input', () => {
+    // lub: const rangevalue = range.value;
+    // text.style.fontSize = rangevalue + 'px';
+    text.style.fontSize = range.value + 'px';
+
 });

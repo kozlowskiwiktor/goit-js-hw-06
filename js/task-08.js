@@ -12,10 +12,14 @@ form.addEventListener('submit', (event) => {
     }
 //bez obiektu: if (email. value === "" || password.value === "")
     if (user.email === "" || user.password === "") {
-        alert("Please fill in all the fields!")
+        alert("Please fill in all the fields!");
+    } else {
+        console.log(user);
     }
-//bez obiektu: console.log(`Login: ${email.value}, Password: ${password.value}`);
-    console.log(user);
+//bez obiektu: 
+//    if (user.email === "" || user.password === "") {
+//       }else {console.log(`Login: ${email.value}, Password: ${password.value}`);
+//     };
 // lub form.reset();
     event.currentTarget.reset();
 });
